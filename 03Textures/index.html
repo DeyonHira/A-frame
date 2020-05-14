@@ -8,18 +8,23 @@
     <script src="scripts/main.js" defer></script>
   </head>
   <body>
-    <a-scene background="color: #333333">
+    <a-scene background="color: #333333" >
+        
       <a-assets>
           <img id="wood" src="images/wood.jpg" />
+   
           
       </a-assets>
+   
       <a-box id="myBox" 
         position="0 1 -3" 
         rotation="0 45 0" 
         width="3" 
         height="1" 
         depth="1" 
+        material="src:#wood"
         shadow>
+          
       </a-box>
       <a-plane id="ground"
         position="0 0 -4" 
@@ -28,7 +33,8 @@
         height="100" 
         color="#7BC8A4" 
         shadow>
-      </a-plane> 
+      </a-plane>
+        
     </a-scene>
   </body>
 </html>
